@@ -44,7 +44,7 @@ const InputForm = ({setIsOpen,setIsLogin}) => {
             </div>
             <button type='submit' >{isSignUp? "Sign Up" : "Login"}</button><br></br>
             {(error != "" )&& <h6 className='error' >{error}</h6>}
-            <p onClick={()=>{setIsSignUp(prev=>!prev)}}>{(isSignUp)? "Alraedy have an account" :"Create new account"} </p>
+            <p onClick={()=>{setIsSignUp(prev=>!prev)}}>{(isSignUp)? "Already have an account" :"Create new account"} </p>
         </form>
   )
 }
